@@ -1,0 +1,58 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background: #1500ff;
+    transition: 2s all;
+}
+
+.square:hover {
+    width: 300px;
+    height: 300px;
+    transform:rotate(180deg);
+    background: #ff9d9d;
+}
+
+.animation-ball {
+    height: 200px;
+    width: 800px;
+    border: 2px solid red;
+}
+
+.ball {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #ff3232;
+    animation: ball 5s infinite linear;
+}
+
+@keyframes ball {
+    0% {
+        transform: translate(0%);
+    }
+
+    50% {
+        transform: translate(600px);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    animation: loading 2s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
